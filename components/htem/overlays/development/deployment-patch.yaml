@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: htem
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-czrt-tenant/byoc-app-ynsx/htem@sha256:93c1119ea6355ac049bbcb3442f117d35b73b1fb30d06abf4004c06454b59ed1
+        name: my-java-quarkus
+        resources: {}
+status: {}
