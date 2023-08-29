@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: htem
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-czrt-tenant/byoc-app-ynsx/htem@sha256:93c1119ea6355ac049bbcb3442f117d35b73b1fb30d06abf4004c06454b59ed1
         name: my-java-quarkus
         ports:
         - containerPort: 8081
